@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Djamel Zair: AI for drug response in leukaemia patient cells</title>
+<meta name="description" content="Interactive research dossier: deep-learning segmentation of 99,055 microscope images, 1,105 cell-physics simulations and a 17-drug panel on patient wells. MSc AI, University of Amsterdam.">
+<meta property="og:title" content="Djamel Zair: AI for drug response in leukaemia patient cells">
+<meta property="og:description" content="Interactive research dossier: deep-learning segmentation of 99,055 microscope images, 1,105 cell-physics simulations and a 17-drug panel on patient wells. MSc AI, University of Amsterdam.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://djamelzair.github.io/cll-spheroid-ai/">
+<meta property="og:image" content="https://djamelzair.github.io/cll-spheroid-ai/img/preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2732%27 fill=%27%23C8A05C%27/%3E%3Ctext x=%2732%27 y=%2741%27 font-family=%27Georgia,serif%27 font-size=%2726%27 text-anchor=%27middle%27 fill=%27%23052E36%27%3EDZ%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<link rel="stylesheet" href="console.css">
+<style>
+:root{--font-ui:"Source Sans 3",system-ui,sans-serif;--font-display:"Source Serif 4",Georgia,serif;--font-id:"JetBrains Mono",monospace;--r-panel:6px;--r-ctl:4px}
+[data-theme="light"]{--bg:#FAF3DF;--s1:#FFFFFF;--s2:#F3ECD6;--s3:#FFFFFF;--edge:#E4D6AE;--line:#D9C895}
+[data-theme="dark"]{--bg:#03222A;--s1:#062F38;--s2:#083841;--s3:#0A434D;--edge:rgba(231,201,138,.16);--line:rgba(231,201,138,.24);--grid:rgba(231,201,138,.10);
+  --glow-a:rgba(13,89,99,.55);--glow-b:rgba(200,160,92,.10);--glow-c:rgba(109,217,161,.05)}
+[data-theme="dark"] .hdr{border-bottom:1px solid var(--acc)}
+[data-theme="dark"] .hero h1,[data-theme="dark"] .ph-h h2,[data-theme="dark"] .ins-body h2{color:#F3ECD6}
+[data-theme="dark"] .kpis{background:color-mix(in srgb,var(--s1) 80%,transparent)}
+[data-theme="dark"] .protocol ol button::before{border-color:var(--acc);color:var(--acc-t)}
+body{font-size:15.5px}
+[data-theme="light"] .hdr{border-bottom:2px solid var(--ink)}
+.panel,.kpi{border:1px solid var(--edge);box-shadow:0 1px 0 rgba(5,46,54,.04)}
+.kpis{gap:0;border:1px solid var(--edge);border-radius:var(--r-panel);overflow:hidden;background:var(--s1)}
+.kpi{border:0;border-radius:0;border-right:1px solid var(--edge)}
+.kpi:last-child{border-right:0}
+.hero h1{font-weight:600}
+.finding{background:var(--s1);border:1px solid var(--edge)}
+@media (max-width:900px){.kpi{border-bottom:1px solid var(--edge)}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script src="data.js"></script><script src="seg_compare.js"></script><script src="console_charts.js"></script><script src="widgets.js"></script><script src="films.js"></script><script src="console_film.js"></script><script src="dials.js"></script><script src="console_dials.js"></script><script src="console_core.js"></script>
+<script>Console.build({ theme: "dark", nav: "protocol", picker: "chips", kpiMini: true });</script>
+</body>
+</html>
