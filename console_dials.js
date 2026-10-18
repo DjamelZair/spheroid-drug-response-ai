@@ -62,7 +62,7 @@ var Dials = (function () {
     rg.setAttribute("aria-valuetext", lv.label + ", " + lv.value);
     root.querySelector("#dial-name").textContent = D.name;
     root.querySelector("#dial-desc").textContent = D.desc;
-    root.querySelector("#dial-partial").textContent = D.partial ? "Pilot result, " + D.partial + "." : "";
+    root.querySelector("#dial-partial").textContent = D.partial ? D.partial + "." : "";
     root.querySelector("#dial-val").innerHTML = "<b>" + (D.new ? lv.label : lv.label + " " + lv.value) + "</b>, " + lv.seeds + (lv.expected && lv.seeds < lv.expected ? " of " + lv.expected : "") + " replicate" + (lv.seeds === 1 ? "" : "s");
     root.querySelector(".dial-ticks").innerHTML = D.levels.map(function (q, i) { return '<span class="' + (i === li ? "on" : "") + '">' + (D.new ? q.label : q.label + " " + q.value) + "</span>"; }).join("");
     root.querySelector(".dial-ends").innerHTML = D.levels.map(function (q, i) { return '<button type="button" aria-pressed="' + (i === li) + '"><img alt="End state, ' + q.label + '" src="' + q.frames[q.frames.length - 1] + '"><span>' + q.label + "</span></button>"; }).join("");
