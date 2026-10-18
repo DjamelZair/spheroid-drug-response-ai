@@ -1,8 +1,8 @@
-# spheroid-drug-response-ai-
+# spheroid-drug-response-ai
 
 Interactive research dossier by Djamel Zair (MSc Artificial Intelligence, University of Amsterdam).
 
-Live page: https://djamelzair.github.io/spheroid-drug-response-ai-/
+Live page: https://djamelzair.github.io/spheroid-drug-response-ai/
 
 Deep-learning segmentation of time-lapse microscopy of chronic lymphocytic leukaemia (CLL) patient cell clusters,
 shape measurements, and inference of cell-level forces by matching against Cellular Potts (CompuCell3D)
